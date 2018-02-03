@@ -19,11 +19,12 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
     input = gets.strip
-    if input != "exit"
-      call
+    if input == "exit"
+      break
     else
     end
   end
+    
 
   def list_songs
     Song.all.sort_by! {|song| song.name}.each_with_index do |song, position|

@@ -68,7 +68,7 @@ class MusicLibraryController
     input = gets.strip
 
     if input = Song.all
-
+    end
   end
 
 end

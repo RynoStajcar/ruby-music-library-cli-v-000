@@ -34,6 +34,7 @@ class MusicLibraryController
         list_songs_by_genre
       when "play song"
         play_song
+      end
     end
   end
 
@@ -87,4 +88,3 @@ class MusicLibraryController
     puts "Playing #{song.name} by #{song.artist.name}" if song
   end
 end
-

@@ -22,9 +22,22 @@ class MusicLibraryController
     if input == "exit"
       break
     else
+      case input
+      when "list songs"
+        list_songs
+      when "list artists"
+        list_artists
+      when "list genres"
+        list_genres
+      when "list artist"
+        list_songs_by_artist
+      when "list genre"
+        list_songs_by_genre
+      when "play song"
+        play_song
     end
   end
-    
+
 
   def list_songs
     Song.all.sort_by! {|song| song.name}.each_with_index do |song, position|

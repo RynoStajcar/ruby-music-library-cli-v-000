@@ -67,7 +67,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     list_songs
     input = gets.strip_to_i
-    
+
   end
 
 end
